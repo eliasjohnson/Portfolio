@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+
+body{
+
+	background-color: white;
+
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+	font-size: larger;
+
+	color: black;
+
+}
+
+
+
+header{
+
+	width: 900px;
+
+	height: 200px;
+
+	background-color: black;
+
+	text-align: center;
+
+	padding-top: 10px;
+
+	margin: auto;
+
+}
+
+
+
+section{
+
+	width: 900px;
+
+	background-image: url('"images/2colback.jpg"');
+
+	background-color: lightslategray;
+
+	background-repeat: repeat-y;
+
+	overflow: hidden;
+
+	margin: auto;
+
+}
+
+
+
+nav {
+
+	float: left;
+
+	width: 250px;
+
+
+}
+
+ul{
+	list-style: none;
+}
+
+article{
+
+	float: left;
+
+	width: 650px;
+
+	text-align: center;
+
+	background-color: whitesmoke;
+
+}
+
+
+
+footer{
+
+	text-align: center;
+
+	width: 900px;
+
+	height: 70px;
+
+	background-color: lightslategray;
+
+	margin: auto;
+
+}
+
+
+
+.logoleft{
+
+	float: left;
+
+	padding-top: 0px;
+
+	padding-left: 15px;
+
+}
+
+nav a{
+
+	border: 6px inset whitesmoke;
+
+
+	background-color: black;
+
+	line-height: 300%;
+
+	font-weight: bold;
+
+	font-size: 35px;
+
+	color: white;
+
+	text-decoration: solid;
+
+	padding-left: 5px;
+
+	padding-right: 5px;
+
+	margin-left: 10px;
+
+	border-radius: 10px;
+}
+
+
+
+nav a:hover{
+
+	color: #405e7b;
+
+	border: 2px outset #9a9a99;
+
+}
+
+
+
+h1{
+
+	color: #00000090;
+
+	text-shadow: #000000;
+
+	text-align: center;
+
+	font-size: xx-large;
+
+}
+
+.floatright{
+	float: right;
+	padding-left: 10px;
+}
+
+
+p{
+
+	color: #000000;
+
+}
+button{
+	appearance: auto;
+}
