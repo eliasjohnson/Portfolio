@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Student Registration</title>
+    <script src="./scripts/model.js" type="text/javascript"></script>
+    <script src="./scripts/controller.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="studentEditArea">
+      <h1 id="formTitle"></h1>
+      <form name="editForm">
+        <table>
+          <tr>
+            <td>First name:</td>
+            <td><input type="text" name="firstNameEdit" /></td>
+            <td id="firstNameError">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Last name:</td>
+            <td><input type="text" name="lastNameEdit" /></td>
+            <td id="lastNameError">&nbsp;</td>
+          </tr>
+          <tr>
+              <td>Gender:</td>
+              <td>
+                  <label> <input type="radio" name="gender" value="male" id="genderMaleRadio" />Male</label>
+                  <label> <input type="radio" name="gender" value="female" id="genderFemaleRadio" />Female</label>
+
+                  <td id="genderError">&nbsp;</td>
+              </td>
+          </tr>
+          <tr>
+            <td>UVU ID:</td>
+            <td><input type="text" name="uvuIdEdit" /></td>
+            <td id="uvuIdError">&nbsp;</td>
+          </tr>
+          <tr>
+              <td>Race:</td>
+              <td>
+                  <select name="raceSelect">
+                      <option value="caucasian">Caucasian</option>
+                      <option value="african american">African American</option>
+                      <option value="hispanic">Hispanic</option>
+                      <option value="asian">Asian</option>
+                      <option value="other">Other</option>
+
+                  </select>
+              </td>
+              <td id="raceError">&nbsp;</td>
+          </tr>
+          <tr>
+              <td>Age: </td>
+              <td><input type="text" name="ageEdit" /></td>
+              <td id="ageError">&nbsp;</td>
+          </tr>
+          <tr>
+              <td>&nbsp;</td>
+              <td>
+                  <label><input type="checkbox" name="isVeteran" />Are you a US veteran?
+                </label>
+                </td>
+                <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td>
+                  <button type="button" id="updateBtn">Update</button>
+                  <button type="button" id="createBtn">Create</button>
+              </td>
+              <td>&nbsp;</td>
+              <td>
+                <button type="button" id="cancelBtn">Cancel</button>
+              </td>
+        </table>
+      </form>
+    </div>
+
+    <div id="studentListArea">
+        <h1>Student Registration</h1>
+        <button type="button" id="newBtn"> New Student</button>
+        <table id="studentTable">
+            <tr>
+                <th>UVU ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+      <p></p>
+    </div>
+    <script>
+        // Add some test data to the model
+        modelCreateStudent("Taryn", "Hervey", false, 12345678, "caucasian", 23, false);
+        modelCreateStudent("Elias", "Johnson", true, 10801761, "caucasian", 21, false);
+        modelCreateStudent("Matt", "Brunken", true, 10691431, "caucasian", 24, false);
+        modelCreateStudent("Whitney", "Cloward", false, 93531052, "caucasian", 21, false);
+
+        // Initialize all the controller
+        onPageLoad();
+    </script>
+  </body>
+</html>
